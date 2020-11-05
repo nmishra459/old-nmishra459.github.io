@@ -2,14 +2,10 @@ body {
     background-color: #FFFFFF;
     color: #212529;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight:450;
     line-height: 1.5;
     margin: 0;
     text-align: left;
-}
-
-a:link {
-  color: blue;
 }
 
 #Harvard {
@@ -55,5 +51,4 @@ button, input[type="submit"] {
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     vertical-align: middle;
 }
-
 
