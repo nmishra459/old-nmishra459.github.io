@@ -39,7 +39,6 @@ input[type="text"]:hover {
     transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
 }
 
-/* Took this from Lab 8, since I really liked it! */
 button, input[type="submit"] {
     background-color: #d9edff;
     border: 1px solid transparent;
