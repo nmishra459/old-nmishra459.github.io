@@ -46,6 +46,14 @@ body {
     color: #002163;
 }
 
+#HCURA {
+    color: #A2C600;
+}
+
+#GUSH {
+    color: #FF0070;
+}
+
 input[type="text"] {
     line-height: 2.0;
     width: 30%;
