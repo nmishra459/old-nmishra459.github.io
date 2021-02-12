@@ -1,0 +1,114 @@
+#fade p {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #d5d7da;
+    font-size: 1rem;
+    font-weight:400;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+    position: relative;
+    font-family: Oxygen;
+    height: 50%;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+}
+
+
+#personal li {
+    list-style-type: none;
+}
+
+#Harvard {
+    color: #54a7ff;
+}
+
+#PPPL {
+    color:#54a7ff;
+}
+
+#Princeton {
+    color: #54a7ff;
+}
+
+#LLP {
+    color:#54a7ff;
+}
+
+#Biopticon {
+    color: #54a7ff;
+}
+
+#HCURA {
+    color: #54a7ff;
+}
+
+#GUSH {
+    color: #54a7ff;
+}
+
+input[type="text"] {
+    line-height: 2.0;
+    width: 30%;
+}
+
+input[type="text"]:hover {
+    background-color: #f5f5f5;
+    transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
+}
+
+/* Took this from Lab 8, since I really liked it! */
+button, input[type="submit"] {
+    background-color: #d9edff;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    vertical-align: middle;
+}
