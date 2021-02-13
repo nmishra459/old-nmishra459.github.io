@@ -1,38 +1,3 @@
-#fade p {
-    margin-top: 25px;
-    font-size: 21px;
-    text-align: center;
-
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
-         -o-animation: fadein 2s; /* Opera < 12.1 */
-            animation: fadein 2s;
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
 body {
     background-color: #FFFFFF;
     color: #d5d7da;
@@ -93,14 +58,6 @@ video {
     color:#54a7ff;
 }
 
-#Biopticon {
-    color: #54a7ff;
-}
-
-#HCURA {
-    color: #54a7ff;
-}
-
 #GUSH {
     color: #54a7ff;
 }
@@ -115,7 +72,6 @@ input[type="text"]:hover {
     transition: color 2s ease-in-out, background-color 0.15s ease-in-out;
 }
 
-/* Took this from Lab 8, since I really liked it! */
 button, input[type="submit"] {
     background-color: #d9edff;
     border: 1px solid transparent;
