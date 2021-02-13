@@ -50,6 +50,11 @@ img {
   filter: grayscale(50%);
 }
 
+video {
+  filter: grayscale(50%);
+}
+
+
 .center {
   margin: 0;
   position: absolute;
