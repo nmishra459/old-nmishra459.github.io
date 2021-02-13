@@ -77,6 +77,10 @@ body {
     color:green;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 #Biopticon {
     color: #002163;
 }
