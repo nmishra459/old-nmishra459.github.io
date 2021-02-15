@@ -30,6 +30,21 @@
             .quick .toggle-group { transition: none;      -webkit-transition: none; }
         </style>
         
+        <style> 
+            body { 
+                animation: fadeInAnimation ease 0.25s; 
+                animation-iteration-count: 1; 
+                animation-fill-mode: forwards; 
+            } 
+            @keyframes fadeInAnimation { 
+                0% { 
+                    opacity: 0; 
+                } 
+                100% { 
+                    opacity: 1; 
+                } 
+            } 
+        </style>  
         
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Inconsolata" />
         <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
