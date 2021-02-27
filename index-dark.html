@@ -3,13 +3,16 @@
 <html lang="en">
 
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
         <meta http-equiv='cache-control' content='no-cache'> 
         <meta http-equiv='expires' content='0'> 
-        <meta http-equiv='pragma' content='no-cache'>
-        <meta name="title" property="og:title" content="Nishant's Personal Website">
-        <meta name="image" property="og:image" content="assets/Site-Screenshot-Dark.PNG">
+        <meta http-equiv='pragma' content='no-cache'>        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <meta name="title" property="og:title" content="Nishant Mishra - Personal Website">
+        <meta name="image" property="og:image" content="assets/Site-Screenshot.PNG">
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -18,34 +21,12 @@
         
         <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>        
-        
         <script>
             function updateSite() {
                 location.replace("index.html");
             }
 
         </script>
-
-        <style>
-            .quick .toggle-group { transition: none;      -webkit-transition: none; }
-        </style>
-        
-<!--          <style> 
-            body { 
-                animation: fadeInAnimation ease 0.15s; 
-                animation-iteration-count: 1; 
-                animation-fill-mode: forwards; 
-            } 
-            @keyframes fadeInAnimation { 
-                0% { 
-                    opacity: 0; 
-                } 
-                100% { 
-                    opacity: 1; 
-                } 
-            } 
-        </style>   -->
-        
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Inconsolata" />
         <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
         <link rel="icon" href="assets/Nishant_Headshot_Dark.jpg" type="image" sizes="16x16">
@@ -63,11 +44,11 @@
                 <a class="nav-link" href="projects-dark.html">Research</a>
             </li>
             <li class="nav-item" style="padding-top:7px; padding-bottom:5px;">
-                <a class="nav-link" href="https://drive.google.com/file/d/1m7q0a2g72PUQfzwZP1efP8E0AaDPEx2k/preview">Resume</a>
-            </li>
+                <a class="nav-link" href="swe-projects-dark.html">Software Projects</a>
+            </li>            
             <li class="nav-item" style="padding-left:15px; padding-top:7px; padding-bottom:5px;">
                 <input id = "toggle-event" type="checkbox" onchange="updateSite()" data-toggle="toggle" data-style="quick" data-onstyle="info" data-offstyle="outline-secondary" data-on="☀️" data-off="🌙"> 
-            </li>              
+            </li>                
         </ul>
 
         <br>
@@ -75,33 +56,58 @@
         <div class = "container" align = "center">
             <img src=assets/Nishant_Headshot_Dark.jpg alt="Responsive image" class="rounded-circle border border-dark img-fluid" style="width:225px;height:225px;">
             <p>
-                <h3>Hi! I'm <strong>Nishant Mishra.</strong></h3>
+                <h3>Hi! I'm <strong>Nishant Mishra.</strong></h3>   
+                <a href="https://github.com/nmishra459" class="btn btn-outline-info">GitHub</a>
+                <a href="https://www.linkedin.com/in/nmishra2024/" class="btn btn-outline-info">LinkedIn</a>
+                <a class="btn btn-outline-info" href="https://drive.google.com/file/d/1m7q0a2g72PUQfzwZP1efP8E0AaDPEx2k/preview">Resume</a>
+                <a href="mailto:nmishra@college.harvard.edu" class="btn btn-outline-info">Contact Me</a>         
+            
                 <p>
-                    <ul id = 'personal' style="padding:2px 6px 4px 6px; color: #d5d7da; border-radius: 25px; background-color: #161b21; border: #30363c 1px solid">
-                        <li><strong>I am currently...</strong><br></li>
+                    <h5><strong>I am currently...</strong></h5>
+                    <ul id = 'personal' style="padding:2px 6px 4px 6px; color: #d5d7da; border-radius: 25px; background-color: #161b21; border: #30363c 2px solid">
                         <li>- 📚 studying computer science at <a type="link" id="Harvard" href="https://www.harvard.edu/"><b>Harvard University</b></a> (Class of 2024).</li>
-                        <li>- 🌱 helping people and communities forge deeper connections at <a type="link" id="Harvard" href="https://www.joinglimpse.com/"><b>Glimpse</b></a>, a Y Combinator-backed startup.</li>
-                        <li>- 🔬 wrapping up research projects on deep learning applications at <a type="link" id="Princeton" href="https://www.princeton.edu/"><b>Princeton University</b></a> and theoretical plasma physics at <a type="link" id="PPPL" href="https://www.pppl.gov/"><b>PPPL</b></a>.</li>
-                        <li>- 🌌 preparing to join a machine learning project on black holes at <a type="link" id="Harvard" href="https://iacs.seas.harvard.edu/"><b>Harvard IACS</b></a>.</li>
+                        <li>- 🌱 helping people and communities forge deeper connections at <a type="link" id="Biopticon" href="https://www.joinglimpse.com/"><b>Glimpse</b></a>, a Y Combinator-backed startup.</li>
+                        <li>- 🌌 preparing to join a machine learning project on black holes at <a type="link" id="IACS" href="https://iacs.seas.harvard.edu/"><b>Harvard IACS</b></a>.</li>
                         <li>- 🎉 cooking and reading in my spare time!</li>
                     </ul>  
                 </p>
-
-                Welcome to my webpage! Feel free to click on some of links below, or head to the navigation bar to learn more about my research projects. <br>
             </p>
+       <div>
+          
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col" id = 'personal'>
+                    <h5 align = "center"><strong>I have previously...</strong></h5>
+                    <ul align = "center" id = 'personal' style="padding:2px 6px 4px 6px; color: #d5d7da; border-radius: 25px; background-color: #161b21; border: #30363c 1px solid">
+                        <li style="margin: 8px 0;">- 🐟 worked on a deep learning zebrafish recognition pathway at <a type="link" id="Princeton" href="https://www.princeton.edu/"><b>Princeton University</b></a>.</li>
+                        <li style="margin: 8px 0;">- ⚛️ designed an adaptive integrator to model self-gravitating particle systems at <a type="link" id="PPPL" href="https://www.pppl.gov/"><b>PPPL</b></a>.</li>
+                        <li style="margin: 8px 0;">- 🔭 programmed imaging scripts for depth scanning technology at <a type="link" id="Biopticon" href="https://www.joinglimpse.com/"><b>Biopticon Corporation</b></a>.</li>
+                    </ul>  
+                </div>                 
+                
+                <div class="col right text-align: left;">
+                    <h5 align = "center"><strong>Education</strong></h5>
+                    <ul style="padding:2px 6px 4px 6px; color: #d5d7da; border-radius: 25px; background-color: #161b21; border: #30363c 1px solid">                       
+                        <li style="font-size:17x; list-style-type: none;"><strong>Harvard University</strong></li>
+                        <li style="font-size:14px;list-style-type: none;">A.B., Computer Science, 2020-2024</li>
+                        <li style="font-size:14px;list-style-type: none;">Courses: Algorithms & Data Structures, Introduction to Probability, Vector Calculus & Linear Algebra, Introduction to Computer Science</li>
+                        <p style="line-height: 2px;"></p>
+                        <li style="font-size:17px;list-style-type: none;"><strong>Princeton University</strong></li>
+                        <li style="font-size:14px;list-style-type: none;">Dual-Enrolled High School Student, Math & Physics, 2018-2020</li>
+                        <li style="font-size:14px;list-style-type: none;">Courses: Single Variable Analysis, Honors Linear Algebra, Number Theory, Advanced Mechanics</li>
 
-            <a href="https://github.com/nmishra459" class="btn btn-outline-info">Github</a>
-            <a href="https://www.linkedin.com/in/nmishra2024/" class="btn btn-outline-info">LinkedIn</a>
-            <a href="mailto:nmishra@college.harvard.edu" class="btn btn-outline-info">Contact Me</a>
-
-        <br> <br>
-        </div>
+                    
+                    </ul> 
+                </div>
+            </div>
+        </div>  
 
         <footer class="small text-center text-muted">
             Created with HTML5/CSS, JS, and Bootstrap 4
         </footer>
 
-        <br><br>
+        <br>
 
     </body>
 </html>
