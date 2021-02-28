@@ -54,10 +54,6 @@ body {
 
 }
 
-#index body {
-    height: 95vh;
-}
-
 #personal li {
     list-style-type: none;
 }
