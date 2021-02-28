@@ -42,6 +42,8 @@ body {
     text-align: left;
     position: relative;
     font-family: Oxygen;
+    width: 100vw;
+    height: 100vh;    
 }
 
 .center {
