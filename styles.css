@@ -42,8 +42,9 @@ body {
     text-align: left;
     position: relative;
     font-family: Oxygen;
-    width: 98vw;
-    height: 98vh;    
+    -moz-transform: scale(0.825, 0.825); /* Moz-browsers */
+    zoom: 0.825; /* Other non-webkit browsers */
+    zoom: 82.5%; /* Webkit browsers */    
 }
 
 .center {
