@@ -77,7 +77,8 @@ a:link {
 }
 
 #IACS {
-    color: #193300;
+	color: #193300;
+}
 
 input[type="text"] {
     line-height: 2.0;
