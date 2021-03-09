@@ -5,7 +5,6 @@
 	animation-timing-function: ease-in;
 	animation-duration: 0.05s;
 }
-
 @keyframes fadeInOpacity {
 	0% {
 		opacity: 0;
@@ -14,68 +13,58 @@
 		opacity: 1;
 	}
 }
-
-body {  
-    background-color: #FFFFFF;
-    color: #212529;
-    font-size: 1rem;
-    font-weight:400;
-    line-height: 1.5;
-    margin: 0;
-    text-align: left;
-    position: relative;
-    font-family: Oxygen;
-    -moz-transform: scale(0.85, 0.85); /* Moz-browsers */
-    zoom: 0.85; /* Other non-webkit browsers */
-    zoom: 85%; /* Webkit browsers */    
+body {
+	background-color: #FFFFFF;
+	color: #212529;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	margin: 0;
+	text-align: left;
+	position: relative;
+	font-family: Oxygen;
+	-moz-transform: scale(0.85, 0.85);
+	/* Moz-browsers */
+	zoom: 0.85;
+	/* Other non-webkit browsers */
+	zoom: 85%;
+	/* Webkit browsers */
 }
-
 .center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 }
-
 #personal li {
-    list-style-type: none;
+	list-style-type: none;
 }
-
 #Harvard {
-    color: #6e0101;
+	color: #6e0101;
 }
-
 #PPPL {
-    color:purple;
+	color: purple;
 }
-
 #Princeton {
-    color: #733000;
+	color: #733000;
 }
-
 #LLP {
-    color:green;
+	color: green;
 }
-
 a:link {
-  text-decoration: none;
+	text-decoration: none;
 }
-
 #Biopticon {
-    color: #002163;
+	color: #002163;
 }
-
 #HCURA {
-    color: #7A8841;
+	color: #7A8841;
 }
-
 #GUSH {
-    color: #8C0048;
+	color: #8C0048;
 }
-
 #IACS {
 	color: #193300;
 }
