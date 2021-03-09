@@ -1,134 +1,95 @@
 <!DOCTYPE html>
-
 <html lang="en">
-    <head>
-        <!-- meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="title" property="og:title" content="Nishant's Projects">
-        <meta name="image" property="og:image" content="assets/site_screenshot.JPG">
-        <meta http-equiv='cache-control' content='no-cache'> 
-        <meta http-equiv='expires' content='0'> 
-        <meta http-equiv='pragma' content='no-cache'>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        
-        <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>        
-        <script>
-            function updateSite() {
-                location.replace("personal-dark.html");
-            }
+<head>
+	<!-- meta tags -->
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+	<meta content="Nishant's Projects" name="title" property="og:title">
+	<meta content="assets/site_screenshot.JPG" name="image" property="og:image">
+	<meta content='no-cache' http-equiv='cache-control'>
+	<meta content='0' http-equiv='expires'>
+	<meta content='no-cache' http-equiv='pragma'>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+	</script>
+	<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js">
+	</script>
+	<script>
+	           function updateSite() {
+	               location.replace("personal-dark.html");
+	           }
 
-        </script>
-        
-        <style>
-            .quick .toggle-group { transition: none;      -webkit-transition: none; }
-        </style>
-
-        <link rel="icon" href="assets/Headshot.jfif" type="image" sizes="16x16">
-        <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
-        <link href="styles.css" rel="stylesheet">
-        <title>Nishant Mishra | Personal</title>
-    </head>
-
-    <body>
-        <ul class="nav sticky-top nav-pills" style="background-color: #ECFDFF;">
-            <li class="nav-item" style="padding-top:7px; padding-bottom:5px;">
-                <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item" style="padding-top:7px; padding-bottom:5px;">
-                <a class="nav-link" href="research.html">Research</a>
-            </li>
-            <li class="nav-item" style="padding-top:7px; padding-bottom:5px;">
-                <a class="nav-link active" href="personal.html">Personal</a>
-            </li>     
-		    <li class="nav-item" style="padding-top:7px; padding-bottom:5px;">
-			    <a class="nav-link" href="courses.html">Coursework</a>
-		    </li>               
-            <li class="nav-item" style="padding-left:15px; padding-top:7px; padding-bottom:5px;">
-                <input id = "toggle-event" type="checkbox" onchange="updateSite()" checked data-toggle="toggle" data-onstyle="info" data-style="quick" data-offstyle="dark" data-on="☀️" data-off="🌙"> 
-            </li>              
-        </ul>
-
+	</script>
+	<style>
+	           .quick .toggle-group { transition: none;      -webkit-transition: none; }
+	</style>
+	<link href="assets/Headshot.jfif" rel="icon" sizes="16x16" type="image">
+	<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
+	<link href="styles.css" rel="stylesheet">
+	<title>Nishant Mishra | Personal</title>
+</head>
+<body>
+	<ul class="nav sticky-top nav-pills" style="background-color: #ECFDFF;">
+		<li class="nav-item" style="padding-top:7px; padding-bottom:5px;">
+			<a class="nav-link" href="index.html">Home</a>
+		</li>
+		<li class="nav-item" style="padding-top:7px; padding-bottom:5px;">
+			<a class="nav-link" href="research.html">Research</a>
+		</li>
+		<li class="nav-item" style="padding-top:7px; padding-bottom:5px;">
+			<a class="nav-link active" href="personal.html">Personal</a>
+		</li>
+		<li class="nav-item" style="padding-top:7px; padding-bottom:5px;">
+			<a class="nav-link" href="courses.html">Coursework</a>
+		</li>
+		<li class="nav-item" style="padding-left:15px; padding-top:7px; padding-bottom:5px;"><input checked data-off="🌙" data-offstyle="dark" data-on="☀️" data-onstyle="info" data-style="quick" data-toggle="toggle" id="toggle-event" onchange="updateSite()" type="checkbox"></li>
+	</ul><br>
+	<h2 align="center"><u><strong>Personal Projects</strong></u></h2><br>
+	<div class="container">
+		<div class="row">
+			<div align="center" class="col" id='personal'>
+				<h2>Catch 21: Dice 🎲</h2>
+				<p>This started out as my final project for CS 50! My partner and I implemented a web application to host a two-player dice game progammed with <b>JavaScript</b>. The game also features a username/password account system, a personalized game statistics page, and a global leaderboard for users to see how they stack up against each other, all implemented with <b>SQL</b> and <b>Python</b>. For the front-end, we used <b>HTML5/CSS</b>, as well as <b>Bootstrap 4</b>. We ended up deploying the website on Heroku, so anyone can make an account, play with friends, and appear on the leaderboard!<br>
+				<br>
+				<a class="btn btn-outline-primary" href="https://catch-21-dice.herokuapp.com/login"><b>Deployed Site</b></a> <a class="btn btn-outline-primary" href="https://github.com/nmishra459/catch_21_dice"><b>Github Repository</b></a> <a class="btn btn-outline-primary" href="https://www.youtube.com/watch?v=euf5um5zlSY"><b>Video Demo</b></a></p>
+			</div>
+			<div class="col text-right"><img alt="Responsive image" class="img-fluid border border-dark" height="500" src="assets/Catch21-Dice.png" width="500"></div>
+		</div>
+	</div><br>
+	<hr>
 	<br>
-	<h2 align = "center"><u><strong>Personal Projects</strong></u></h2>
+	<div class="container">
+		<div class="row">
+			<div class="col"><img alt="Responsive image" class="img-fluid border border-dark" height="500" src="assets/Math_Modeling.PNG" width="500"></div>
+			<div align="center" class="col right text-align left" id='personal'>
+				<br>
+				<h2>Keep on Trucking 🚚📈</h2>
+				<p>In March 2020, I teamed up with four of my high school friends to compete in the MathWorks Math Modeling Challenge. Together, we researched the U.S. electric truck market, developed mathematical models (<b>Python</b>) to predict electric truck usage in the next two decades, and determined ideal economic/environmental zones for U.S.-based charging station infrastructure. We compiled our results into a final paper, which placed in the <b>top 19% of 760 submissions.</b><br>
+				<br>
+				<a class="btn btn-outline-primary" href="https://drive.google.com/file/d/1OO-L5_0o9LPhplAl4KsvOcDH0Afh9QTG/view"><b>Research Paper</b></a> <a class="btn btn-outline-primary" href="https://github.com/nmishra459/PHS_M3_Math_Modeling"><b>Github Repository</b></a></p>
+			</div>
+		</div>
+	</div><br>
+	<hr>
 	<br>
-	    
-        <div class="container">
-            <div class="row">
-                <div class="col" align = "center" id = 'personal'>
-                    <h2>Catch 21: Dice 🎲</h2>
-                    <p>This started out as my final project for CS 50! My partner and I implemented a web application to host a two-player dice game progammed
-                        with <b>JavaScript</b>. The game also features a username/password account system, a personalized game statistics page, and a 
-                        global leaderboard for users to see how they stack up against each other, all implemented with <b>SQL</b> and <b>Python</b>. For 
-                        the front-end, we used <b>HTML5/CSS</b>, as well as <b>Bootstrap 4</b>. We ended up deploying the website on Heroku, so anyone can make
-                        an account, play with friends, and appear on the leaderboard!
-                         <br><br>
-                        
-                        <a href="https://catch-21-dice.herokuapp.com/login" class = "btn btn-outline-primary"><b>Deployed Site</b></a>
-                        <a href="https://github.com/nmishra459/catch_21_dice" class = "btn btn-outline-primary"><b>Github Repository</b></a>
-                        <a href="https://www.youtube.com/watch?v=euf5um5zlSY" class = "btn btn-outline-primary"><b>Video Demo</b></a></p>
-                </div>
-                <div class="col text-right">
-                    <img src=assets/Catch21-Dice.png alt="Responsive image" class = "img-fluid border border-dark" width="500" height="500">
-                </div>
-            </div>
-        </div>
-        <br>
-        <hr>
-
-        <br>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                      <img src=assets/Math_Modeling.PNG alt="Responsive image" class = "img-fluid border border-dark" width="500" height="500">
-                </div>
-                <div class="col right text-align left" align = "center" id = 'personal'>
-                    <br>
-                    <h2>Keep on Trucking 🚚📈</h2>
-                    <p>In March 2020, I teamed up with four of my high school friends to compete in the 
-                        MathWorks Math Modeling Challenge. Together, we researched the U.S. electric 
-                        truck market, developed mathematical models (<b>Python</b>) to predict electric truck 
-                        usage in the next two decades, and determined ideal economic/environmental zones 
-                        for U.S.-based charging station infrastructure. We compiled our results into a final 
-			paper, which placed in the <b>top 19% of 760 submissions.</b>
-                        <br> <br>
-
-                    <a href="https://drive.google.com/file/d/1OO-L5_0o9LPhplAl4KsvOcDH0Afh9QTG/view" class = "btn btn-outline-primary"><b>Research Paper</b></a>
-                    <a href="https://github.com/nmishra459/PHS_M3_Math_Modeling" class="btn btn-outline-primary"><b>Github Repository</b></a></p>
-
-                </div>
-            </div>
-        </div>
-        <br>
-        
-        <hr>
-
-        <br>
-        <div class="container">
-            <div class="row">
-                <div class="col" align = "center" id = 'personal'>
-                    <br>
-                    <h2>Asteroid Ambush! 🚀</h2>
-                    <p> For my final project for AP Computer Science A, I programmed a 2D space fighter game that has users 
-                        destroy asteroids and collect coins. The game features a timer, scoreboard, and life counter. To spice
-                        up gameplay, I added four different upgrade paths for the users to take, which can either grant lives,
-                        randomly destroy asteroids, or improve the ray-gun mechanism's rate and scope. The sprites were taken from open source
-                        locations on the internet, and the logic was implemented entirely in <b>Java.</b> <br><br>
-                        <a href="https://github.com/nmishra459/Asteroid_Ambush" class="btn btn-outline-primary"><b>Github Repository</b></a></p>
-                </div>
-                <div class="col text-right">
-                      <video width="400" height="400" autoplay muted loop class = "embed-responsive embed-responsive-1by1">
-                        <source src="assets/asteroids.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-        </div>
-        <br>
-    </body>
+	<div class="container">
+		<div class="row">
+			<div align="center" class="col" id='personal'>
+				<br>
+				<h2>Asteroid Ambush! 🚀</h2>
+				<p>For my final project for AP Computer Science A, I programmed a 2D space fighter game that has users destroy asteroids and collect coins. The game features a timer, scoreboard, and life counter. To spice up gameplay, I added four different upgrade paths for the users to take, which can either grant lives, randomly destroy asteroids, or improve the ray-gun mechanism's rate and scope. The sprites were taken from open source locations on the internet, and the logic was implemented entirely in <b>Java.</b><br>
+				<br>
+				<a class="btn btn-outline-primary" href="https://github.com/nmishra459/Asteroid_Ambush"><b>Github Repository</b></a></p>
+			</div>
+			<div class="col text-right">
+				<video autoplay="" class="embed-responsive embed-responsive-1by1" height="400" loop="" width="400"><source src="assets/asteroids.mp4" type="video/mp4"> Your browser does not support the video tag.</video>
+			</div>
+		</div>
+	</div><br>
+</body>
 </html>
