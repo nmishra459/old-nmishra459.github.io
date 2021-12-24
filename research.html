@@ -47,44 +47,65 @@
 		</li>
 		<li class="nav-item" style="padding-left:15px; padding-top:7px; padding-bottom:5px;"><input checked data-off="🌙" data-offstyle="dark" data-on="☀️" data-onstyle="info" data-style="quick" data-toggle="toggle" id="toggle-event" onchange="updateSite()" type="checkbox"></li>
 	</ul><br>
+
 	<h2 align="center"><u><strong>Research Projects</strong></u></h2><br>
 	<div class="container">
 		<div class="row">
-			<div align="center" class="col">
-				<h2>Deep Learning Algorithms for Following Zebrafish Growth</h2>
-				<p>Zebrafish are great test subjects for medical research! But they all look similar, and they grow quickly, which makes it difficult for researchers to accurately identify them for trials. Working as a machine learning research intern with my colleagues at Princeton University (<a href="https://sites.google.com/view/puchallalab/home?authuser=0" id="Princeton" type="link"><b>Puchalla Lab, Dept. of Physics</b></a>), I ran sections of the analysis pipeline for a deep learning recognition pathway (based off Google's Inception V3 model) that uses a temporal bootstrapping technique to identify individual zebrafish over several weeks (<b>Python, Tensorflow, Keras</b>). Our goal is to offer an alternative to more labor-intensive and invasive identification methods such as subdermal dye-injection and RFID tag implants. [publication in progress]<br></p>
+			<div align="center" class="col" id='personal'>
+				<h2>Machine Learning Algorithms for Parameterizing Black Hole Images</h2>
+				<p>In 2019, the Event Horizon Telescope Collaboration (<a href="https://eventhorizontelescope.org/" id="IACS" type="link"><b>EHT</b></a>) captured the first direct images of a black hole, serving as a major milestone in astrophysical classification. As a machine learning research intern at the Harvard Institute for Applied Computational Science (<a href="https://iacs.seas.harvard.edu/" id="IACS" type="link"><b>StellarDNN Group, IACS</b></a>), , I use this data to run sections of the analysis pipeline for a machine learning recognition pathway (Python, PyTorch, Keras), exploring ways to not only pull physical parameters from images like the ones from EHT, but also create higher-resolution simulated images of what these black holes images might look like had we had even more powerful telescopes.<br></p>
 			</div>
-			<div class="col text-right"><br><img alt="Responsive image" class="img-fluid border border-dark" src="assets/PuchallaLab.png"></div>
+			<br>
+			<div class="col text-right"><br><br><img alt="Responsive image" class="img-fluid border border-dark" src="assets/IACS.png"></div>
 		</div>
 	</div>
+
 	<hr>
+
 	<br>
 	<div class="container">
 		<div class="row">
-			<div class="col">
-				<video autoplay loop muted class="embed-responsive embed-responsive-1by1" height="440" width="540"><source src="assets/animation_fast.mp4" type="video/mp4"> Your browser does not support the video tag.</video>
+			<div class="col"><br><img alt="Responsive image" class="img-fluid border border-dark" src="assets/PuchallaLab.png"></div>
+			<div align="center" class="col right text-align left" id='personal'>
+				<h2>Deep Learning Algorithms for Following Zebrafish Growth</h2>
+				<p>Zebrafish are great test subjects for medical research! But they all look similar, and they grow quickly, which makes it difficult for researchers to accurately identify them for trials. Working as a machine learning research intern with my colleagues at Princeton University (<a href="https://sites.google.com/view/puchallalab/home?authuser=0" id="Princeton" type="link"><b>Puchalla Lab, Dept. of Physics</b></a>), I ran sections of the analysis pipeline for a deep learning recognition pathway (based off Google's Inception V3 model) that uses a temporal bootstrapping technique to identify individual zebrafish over several weeks (<b>Python, Tensorflow, Keras</b>). Our goal is to offer an alternative to more labor-intensive and invasive identification methods such as subdermal dye-injection and RFID tag implants. [publication in progress]<br></p>
 			</div>
-			<div align="center" class="col right text-align left">
+		</div>
+	</div>
+	<br>
+
+	<hr>
+
+	<br>
+	<div class="container">
+		<div class="row">
+			<div align="center" class="col" id='personal'>
 				<br>
 				<h2>Statistical Mechanics of Self-Gravitating Systems</h2>
 				<p>In 2020, I worked as a computational physics research intern at the Princeton Plasma Physics Laboratory (<a href="https://www.pppl.gov/" id="PPPL" type="link"><b>PPPL</b></a>). As a part of PPPL's <a href = "https://theory.pppl.gov/research/research.php?rid=3" id = "PPPL" type = "link"><b>Computational Plasma Physics Group</b></a> (Theory Department), I focused on mapping out the statistical mechanics of self-gravitating systems as well as comparing them to those of plasma-based systems. First, I developed an adaptive symplectic integrator <b>(C++, Python)</b> that can model the complex motion - including binary captures - of dozens of closely distributed particles in space with reasonable accuracy. I then utilized these algorithms to study and record the underlying energy patterns and discrepancies in these systems. At the end of Summer 2020, I presented my work at PPPL's Summer Internship Poster Session.<br>
 				<br>
 				<a class="btn btn-outline-primary" href="assets/An Adaptive Symplectic Integrator for Modeling the Mechanics of Self-Gravitating Systems.pdf"><b>Research Poster</b></a> <a class="btn btn-outline-primary" href="assets/PPPL Presentation.pdf"><b>Research Presentation</b></a></p>
 			</div>
+			<div class="col text-right">
+				<video autoplay muted loop class="embed-responsive embed-responsive-1by1" height="440" width="540"><source class="video-mask" src="assets/animation_fast.mp4" type="video/mp4"> Your browser does not support the video tag.</video>
+			</div>
 		</div>
-	</div><br>
+	</div>
+	<br>
+
 	<hr>
+
 	<br>
 	<div class="container">
 		<div class="row">
-			<div align="center" class="col">
+			<div class="col text-right"><img alt="Responsive image" class="img-fluid border border-dark" src="assets/Microfluidics.png"></div>
+			<div align="center" class="col right text-align left" id='personal'>
 				<br>
 				<h2>A Microfluidic Flow System for Studying Single-Particle Kinetics</h2>
 				<p>In the summer of 2019, I worked as a microfluidics r&d engineering intern through Princeton University's Laboratory Learning Program (<a href="https://research.princeton.edu/about-us/internships/laboratory-learning-program" id="LLP" type="link"><b>LLP</b></a>). As a part of <a href="https://sites.google.com/view/puchallalab/home?authuser=0" id="Princeton" type="link"><b>Puchalla Lab</b></a>, I set up a multi-channel syringe pump system that facilitates single-particle kinetics in PDMS microchannels. To enable users to set, change, and read flow rates/directions, I programmed a user interface with <b>LabVIEW</b>, a graphical programming environment. I also worked on a set of <b>MATLAB</b> scripts that simulate the distribution of fluorescence bursts under various testing conditions.<br>
 				<br>
 				<a class="btn btn-outline-primary" href="assets/A Multi-Channel Microfluidic Flow System for Facilitating and Studying Single-Particle Kinetics.pdf"><b>Research Poster</b></a></p>
 			</div>
-			<div class="col text-right"><img alt="Responsive image" class="img-fluid border border-dark" src="assets/Microfluidics.png"></div>
 		</div>
 	</div><br>
 </body>
