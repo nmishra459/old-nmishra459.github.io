@@ -65,6 +65,13 @@ video {
 #GUSH {
 	color: #54a7ff;
 }
+
+#dark_switch {
+	background-color: #0d1017;
+	background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='rgba%280, 123, 255, 0.9%29'/></svg>");
+	border: 1px solid rgb(97 97 97);
+}
+
 a:link {
 	text-decoration: none;
 }
