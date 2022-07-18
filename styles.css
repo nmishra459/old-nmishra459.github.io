@@ -29,7 +29,7 @@ body {
 	zoom: 0.70;
 	/* Other non-webkit browsers */
 	zoom: 70%;
-	/* Webkit browsers */	
+	/* Webkit browsers */
 }
 
 .center {
@@ -86,4 +86,8 @@ a:link {
 }
 #IACS {
 	color: #193300;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  background-color: transparent
 }

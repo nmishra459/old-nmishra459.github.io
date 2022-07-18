@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- meta tags -->
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+	<meta content="Nishant's Projects" name="title" property="og:title">
+	<meta content="assets/site_screenshot.JPG" name="image" property="og:image">
+	<meta content='no-cache' http-equiv='cache-control'>
+	<meta content='0' http-equiv='expires'>
+	<meta content='no-cache' http-equiv='pragma'>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+	</script>
+	<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+	<script>
+	           function updateSite() {
+	               location.replace("course-projects-dark.html");
+	           }
+	</script>
+
+	<link href="assets/Nishant_CloseUp.jpg" rel="icon" sizes="16x16" type="image">
+	<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
+	<link href="styles.css" rel="stylesheet">
+	<title>Nishant Mishra | Course Projects</title>
+</head>
+	<body>
+		<ul class="nav sticky-top nav-pills" style="background-color: #ECFDFF;">
+			<li class="nav-item" style="padding-top:7px; padding-bottom:5px;">
+				<a class="nav-link" href="index.html">Home</a>
+			</li>
+			<li class="nav-item dropdown" style="padding-top:7px; padding-bottom:5px;">
+				<a class="nav-link dropdown-toggle" id="navbarDarkDropdownMenuLink" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Projects
+				</a>
+				<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink" style="background-color:#ECFDFF;">
+					<li><a class="dropdown-item" style = "color:#007bff;" href="research.html">Research</a></li>
+					<li><a class="dropdown-item active" href="course-projects.html">Courses</a></li>
+					<li><a class="dropdown-item" style = "color:#007bff;" href="personal.html">Personal</a></li>
+				</ul>
+			</li>
+			<li class="nav-item" style="padding-top:7px; padding-bottom:5px;">
+				<a class="nav-link" href="courses.html">Coursework</a>
+			</li>
+			<li class="nav-item" style="padding-left:10px; padding-top:13.5px; padding-bottom:5px; padding-right:10px;">
+				🌙
+			</li>
+			<li class="nav-item" style="padding-left:17px; padding-top:14.5px; padding-bottom:5px;">
+				<div class="form-check form-switch">
+		  		<input class="form-check-input" type="checkbox" onchange="updateSite()" role="switch" id="flexSwitchCheckChecked" checked>
+				</div>
+		 </li>
+		 <li class="nav-item" style="padding-top:14.5px; padding-bottom:5px;">
+			 ☀️
+		 </li>
+		</ul><br>
+
+	<h2 align="center"><u><strong>Course Projects</strong></u></h2><br>
+	<div class="container">
+		<div class="row">
+			<div align="center" class="col" id='personal'>
+				<br><br>
+				<h2>Reading Between Private Lines 🔒</h2>
+				<p>The growing field of <b>differential privacy</b> (DP) offers a framework where potentially-sensitive data can be analyzed in aggregate
+					while limiting the information that can be known about individual data entries. For my CS 208 final project, I worked with Eric Shen
+					(<i>Harvard College '24</i>) to dive into ridge, polynomial, lasso and Bayesian regression to  provide a review on how each of these techniques
+					has been modified to satisfy DP in academic literature. We also attempt code implementations (<b>Python</b>) of these techniques and evaluated
+					their performance on simple datasets to discuss considerations, challenges, and recommendations for them.<br>
+				<br>
+				<a class="btn btn-outline-primary" href="assets/208 Poster.pdf"><b>Project Poster</b></a> <a class="btn btn-outline-primary" href="assets/CS_208_report.pdf"><b>Project Report</b></a></p>
+			</div>
+			<div class="col text-right"><img alt="Responsive image" class="img-fluid border border-dark" height="475" src="assets/208_picture.png" width="475"></div>
+		</div>
+	</div><br>
+
+	<hr>
+	<br>
+
+	<div class="container">
+		<div class="row">
+			<div class="col"><br><img alt="Responsive image" class="img-fluid border border-dark" height="550" src="assets/Math22.png" width="570"></div>
+			<div align="center" class="col right text-align left" id='personal'>
+				<h2>Bridges & Donuts 🌉🍩</h2>
+				<p>In my freshman year at Harvard, I worked on two projects for Math 22,
+				a year-long proof-based course on the connections between <b>linear algebra</b> and <b>vector calculus</b>. For each project, my partner,
+				Erin Yuan (<i>Harvard College '24</i>), and I worked to write up a paper, one on <b>graph theory</b> with linear algebra (Fall '20), and the
+				other on <b>point-set topology</b> with vector calculus (Spring '21). We start both papers by proving abstract theorems, but end with applications
+				of each topic, whether it was computing the sheer number of paths a traveler could take to reach their destination (graph theory), or classifying
+				the letters of the alphabet (topology).
+				<br><br>
+				<a class="btn btn-outline-primary" href="assets/An_Introduction_to_the_Applications_of_Linear_Algebra_in_Graph_Theory.pdf"><b>Graph Theory Paper</b></a> <a class="btn btn-outline-primary" href="assets/An_Introduction_to_Point_Set__Topology.pdf"><b>Point-Set Topology Paper</b></a></p>
+			</div>
+		</div>
+	</div>
+
+	<hr>
+	<br>
+
+	<div class="container">
+		<div class="row">
+			<div align="center" class="col" id='personal'>
+				<br>
+				<h2>Catch 21: Dice 🎲</h2>
+				<p>This started out as my final project for CS50, Harvard's most popular course, with more than 700 students! My partner, Omar Wahby
+					(<i>Harvard College '24</i>), and I implemented a web application to host a two-player dice game programmed with <b>JavaScript</b>.
+					The game also features a username and password account system, a personalized game statistics page, and a global leaderboard for users
+					to see how they stack up against each other, all implemented with <b>SQL</b> and <b>Python</b>. For the front-end, we used <b>HTML5/CSS</b>,
+					as well as <b>Bootstrap 4</b>. We ended up deploying the website on Heroku, so anyone can make an account, play with friends, and appear
+					on the leaderboard!<br>
+				<br>
+				<a class="btn btn-outline-primary" href="https://catch-21-dice.herokuapp.com/login"><b>Deployed Site</b></a> <a class="btn btn-outline-primary" href="https://github.com/nmishra459/catch_21_dice"><b>GitHub Repository</b></a> <a class="btn btn-outline-primary" href="https://www.youtube.com/watch?v=euf5um5zlSY"><b>Video Demo</b></a></p>
+			</div>
+			<div class="col"><img alt="Responsive image" class="img-fluid border border-dark" height="500" src="assets/Catch21-Dice.png" width="500"></div>
+		</div>
+	</div>
+
+	<hr>
+	<br>
+
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<video autoplay loop muted class="embed-responsive embed-responsive-1by1" height="400" width="400"><source src="assets/asteroids.mp4" type="video/mp4"> Your browser does not support the video tag.</video>
+			</div>
+			<div align="center" class="col right text-align left" id='personal'>
+				<br><br><br>
+				<h2>Asteroid Ambush! 🚀</h2>
+				<p>For my final project for AP Computer Science A, I programmed a 2D space fighter game that has users destroy asteroids and collect coins. The game
+					features a timer, scoreboard, and life counter. To spice up gameplay, I added four different upgrade paths for the users to take, which can either
+					grant lives, randomly destroy asteroids, or improve the ray-gun mechanism's rate and scope. The sprites were taken from open source locations on the
+					internet, and the logic was implemented entirely in <b>Java.</b><br>
+				<br>
+				<a class="btn btn-outline-primary" href="https://github.com/nmishra459/Asteroid_Ambush"><b>GitHub Repository</b></a></p>
+			</div>
+
+		</div>
+	</div><br>
+
+</body>
+</html>
