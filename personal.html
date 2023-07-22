@@ -105,84 +105,85 @@
       cursor: pointer;
     }
   </style>
-<script>
-  // Function to set the dark mode preference in localStorage
-  function setDarkModePreference(isDarkMode) {
-    localStorage.setItem('darkMode', isDarkMode ? 'true' : 'false');
-  }
-
-  // JavaScript function to toggle light and dark mode
-  function toggleDarkMode() {
-    const body = document.body;
-    const isDarkMode = body.classList.contains("dark-mode");
-
-    // Toggle the dark mode class on the body element
-    body.classList.toggle("light-mode");
-    body.classList.toggle("dark-mode");
-
-    // Save the dark mode preference to localStorage
-    setDarkModePreference(!isDarkMode);
-
-    // Toggle the sun/moon emoji
-    const sunMoonEmoji = document.getElementById("sunMoonEmoji");
-    if (body.classList.contains("dark-mode")) {
-      sunMoonEmoji.innerText = "🌙";
-    } else {
-      sunMoonEmoji.innerText = "☀️";
+  <script>
+    // Function to set the dark mode preference in localStorage
+    function setDarkModePreference(isDarkMode) {
+      localStorage.setItem('darkMode', isDarkMode ? 'true' : 'false');
     }
-  }
 
-  // Function to check the user's dark mode preference on page load
-  function checkDarkModePreference() {
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-    const body = document.body;
-    if (isDarkMode) {
-      body.classList.add("dark-mode");
-      document.getElementById("sunMoonEmoji").innerText = "🌙";
-    } else {
-      body.classList.add("light-mode");
-      document.getElementById("sunMoonEmoji").innerText = "☀️";
+    // JavaScript function to toggle light and dark mode
+    function toggleDarkMode() {
+      const body = document.body;
+      const isDarkMode = body.classList.contains("dark-mode");
+
+      // Toggle the dark mode class on the body element
+      body.classList.toggle("light-mode");
+      body.classList.toggle("dark-mode");
+
+      // Save the dark mode preference to localStorage
+      setDarkModePreference(!isDarkMode);
+
+      // Toggle the sun/moon emoji
+      const sunMoonEmoji = document.getElementById("sunMoonEmoji");
+      if (body.classList.contains("dark-mode")) {
+        sunMoonEmoji.innerText = "🌙";
+      } else {
+        sunMoonEmoji.innerText = "☀️";
+      }
     }
-  }
 
-  // Check the user's dark mode preference when the page loads
-  checkDarkModePreference();
-</script>
- </head>
- <body class="light-mode" onload="checkDarkModePreference()">
+    // Function to check the user's dark mode preference on page load
+    function checkDarkModePreference() {
+      const isDarkMode = localStorage.getItem('darkMode') === 'true';
+      const body = document.body;
+      if (isDarkMode) {
+        body.classList.add("dark-mode");
+        document.getElementById("sunMoonEmoji").innerText = "🌙";
+      } else {
+        body.classList.add("light-mode");
+        document.getElementById("sunMoonEmoji").innerText = "☀️";
+      }
+      // Show the content after applying the dark mode preference
+      body.style.visibility = "visible";
+    }
+
+    // Check the user's dark mode preference when the page loads
+    checkDarkModePreference();
+  </script>
+</head>
+<body style="visibility: hidden" class="light-mode" onload="checkDarkModePreference()">
   <nav class="navbar navbar-expand-lg navbar-light">
-   <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">
-     <span class="projects-title text-cyan">Nishant Mishra</span>
-    </a>
-    <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
-     <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-     <ul class="navbar-nav">
-      <li class="nav-item">
-       <a class="nav-link active text-cyan" href="index.html">Home</a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link text-cyan" href="courses.html">Courses</a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link text-cyan" href="personal.html">Personal</a>
-      </li>
-      <li class="nav-item">
-       <a class="nav-link text-cyan" href="research.html">Research</a>
-      </li>
-      <li class="nav-item">
-        <span class="nav-link sun-moon-emoji" id="sunMoonEmoji" onclick="toggleDarkMode()">☀️</span>
-      </li>
-     </ul>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <span class="projects-title text-cyan">Nishant Mishra</span>
+      </a>
+      <button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active text-cyan" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-cyan" href="courses.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-cyan" href="personal.html">Personal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-cyan" href="research.html">Research</a>
+          </li>
+          <li class="nav-item">
+            <span class="nav-link sun-moon-emoji" id="sunMoonEmoji" onclick="toggleDarkMode()">☀️</span>
+          </li>
+        </ul>
+      </div>
     </div>
-
-   </div>
   </nav>
   <br/>
   <div class="bg-slate-50 rounded-xl justify-center p-7 mt-12 mb-12 mx-12 md:mx-auto lg:mx-auto wide-container shadow-2xl">
-
+ 
     <h1 align="center" class="mb-2 text-3xl font-extrabold leading-none tracking-tight text-cyan md:text-4xl lg:text-5xl projects-title">Personal Projects</h1>
 	<br>
 	<div class="container">
