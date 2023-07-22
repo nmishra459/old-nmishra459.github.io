@@ -107,6 +107,14 @@
     .sun-moon-emoji {
       cursor: pointer;
     }
+    /* Add CSS transitions for smooth animations */
+    .page-transition {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      transition: left 0.3s ease-in-out;
+    }
   </style>
   <script>
     // Function to set the dark mode preference in localStorage
@@ -148,6 +156,7 @@
         document.getElementById("sunMoonEmoji").innerText = "☀️";
       }
     }
+    
   </script>
  </head>
  <body class="light-mode" onload="checkDarkModePreference()">
@@ -181,7 +190,6 @@
 
    </div>
   </nav>
-  <br/>
   <div class="bg-slate-50 rounded-xl justify-center p-7 mt-12 mb-12 mx-12 md:mx-auto lg:mx-auto max-w-2xl shadow-2xl">
    <div class="text-center mb-7">
     <div align="center">
