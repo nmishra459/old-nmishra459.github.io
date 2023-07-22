@@ -22,7 +22,9 @@
       --switch-slider-color: #fff;
       --switch-slider-color-checked: #c9d1d9;
       --switch-slider-bg-checked: #047A88;
-      background: linear-gradient(to right, var(--bg-gradient-color-start), var(--bg-gradient-color-end));
+      background-image: linear-gradient(to bottom right, var(--bg-gradient-color-start), var(--bg-gradient-color-end));
+      background-attachment: fixed;
+      background-repeat: no-repeat;
     }
 
     /* Dark mode styles */
@@ -39,7 +41,9 @@
       --switch-slider-color: #fff;
       --switch-slider-color-checked: #c9d1d9;
       --switch-slider-bg-checked: #047A88;
-      background-color: var(--bg-gradient-color-end);
+      background-image: linear-gradient(to bottom right, var(--bg-gradient-color-start), var(--bg-gradient-color-end));
+      background-attachment: fixed;
+      background-repeat: no-repeat;
     }
 
     body {
@@ -104,49 +108,47 @@
       cursor: pointer;
     }
   </style>
-<script>
-  // Function to set the dark mode preference in localStorage
-  function setDarkModePreference(isDarkMode) {
-    localStorage.setItem('darkMode', isDarkMode ? 'true' : 'false');
-  }
-
-  // JavaScript function to toggle light and dark mode
-  function toggleDarkMode() {
-    const body = document.body;
-    const isDarkMode = body.classList.contains("dark-mode");
-
-    // Toggle the dark mode class on the body element
-    body.classList.toggle("light-mode");
-    body.classList.toggle("dark-mode");
-
-    // Save the dark mode preference to localStorage
-    setDarkModePreference(!isDarkMode);
-
-    // Toggle the sun/moon emoji
-    const sunMoonEmoji = document.getElementById("sunMoonEmoji");
-    if (body.classList.contains("dark-mode")) {
-      sunMoonEmoji.innerText = "🌙";
-    } else {
-      sunMoonEmoji.innerText = "☀️";
+  <script>
+    // Function to set the dark mode preference in localStorage
+    function setDarkModePreference(isDarkMode) {
+      localStorage.setItem('darkMode', isDarkMode ? 'true' : 'false');
     }
-  }
 
-  // Function to check the user's dark mode preference on page load
-  function checkDarkModePreference() {
-    const isDarkMode = localStorage.getItem('darkMode') === 'true';
-    const body = document.body;
-    if (isDarkMode) {
-      body.classList.add("dark-mode");
-      document.getElementById("sunMoonEmoji").innerText = "🌙";
-    } else {
-      body.classList.add("light-mode");
-      document.getElementById("sunMoonEmoji").innerText = "☀️";
+    // JavaScript function to toggle light and dark mode
+    function toggleDarkMode() {
+      const body = document.body;
+      const isDarkMode = body.classList.contains("dark-mode");
+
+      // Toggle the dark mode class on the body element
+      if (isDarkMode) {
+        body.classList.remove("dark-mode");
+        body.classList.add("light-mode");
+      } else {
+        body.classList.remove("light-mode");
+        body.classList.add("dark-mode");
+      }
+
+      // Save the dark mode preference to localStorage
+      setDarkModePreference(!isDarkMode);
+
+      // Toggle the sun/moon emoji
+      const sunMoonEmoji = document.getElementById("sunMoonEmoji");
+      sunMoonEmoji.innerText = isDarkMode ? "☀️" : "🌙";
     }
-  }
 
-  // Check the user's dark mode preference when the page loads
-  checkDarkModePreference();
-</script>
+    // Function to check the user's dark mode preference on page load
+    function checkDarkModePreference() {
+      const isDarkMode = localStorage.getItem('darkMode') === 'true';
+      const body = document.body;
+      if (isDarkMode) {
+        body.classList.add("dark-mode");
+        document.getElementById("sunMoonEmoji").innerText = "🌙";
+      } else {
+        body.classList.add("light-mode");
+        document.getElementById("sunMoonEmoji").innerText = "☀️";
+      }
+    }
+  </script>
  </head>
  <body class="light-mode" onload="checkDarkModePreference()">
   <nav class="navbar navbar-expand-lg navbar-light">
